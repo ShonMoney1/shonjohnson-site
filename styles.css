@@ -202,3 +202,131 @@ footer p,footer span{color:#9aa39d}
   .schedule-row>span:nth-child(3),.schedule-row>span:nth-child(4){grid-column:2}
   .schedule-row>span:nth-child(5){grid-column:2;grid-row:auto;justify-self:start;margin-top:4px}
 }
+
+/* ===== Summer 2026 Journal v2 ===== */
+.journal-v2{
+  background:
+    radial-gradient(circle at 12% 10%,rgba(24,163,99,.10),transparent 25%),
+    linear-gradient(180deg,#050706 0%,#080b09 50%,#050706 100%);
+}
+.journal-v2-header{max-width:820px;margin-bottom:42px}
+.journal-v2-header h2{
+  font:800 clamp(58px,8vw,104px)/.84 "Barlow Condensed";
+  letter-spacing:-3px;
+  margin:0 0 20px;
+}
+.journal-v2-intro{
+  color:#b9c2bc;
+  font-size:18px;
+  line-height:1.7;
+  max-width:700px;
+}
+.journal-v2-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.journal-entry{
+  background:#090c0a;
+  border:1px solid var(--line);
+  overflow:hidden;
+  transition:transform .28s ease,border-color .28s ease;
+}
+.journal-entry:hover{
+  transform:translateY(-4px);
+  border-color:rgba(24,163,99,.48);
+}
+.journal-entry-photo{
+  height:330px;
+  position:relative;
+  overflow:hidden;
+  background-size:cover;
+  background-position:center;
+}
+.france-photo{
+  background-image:
+    linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,.05) 60%),
+    url("assets/journal-france.jpg");
+}
+.disney-photo{
+  background-image:
+    linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,.05) 60%),
+    url("assets/journal-disney.jpg");
+}
+.training-photo{
+  background-image:
+    linear-gradient(to top,rgba(0,0,0,.76),rgba(0,0,0,.03) 65%),
+    url("assets/journal-training.jpg");
+}
+.journal-photo-placeholder{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:24px;
+  background:
+    radial-gradient(circle at 75% 15%,rgba(24,163,99,.23),transparent 34%),
+    linear-gradient(to top,rgba(0,0,0,.86),transparent 60%);
+}
+.journal-photo-placeholder span{
+  font:800 38px/1 "Barlow Condensed";
+  letter-spacing:-1px;
+}
+.journal-photo-placeholder small{
+  color:#98a39c;
+  margin-top:8px;
+  font-size:11px;
+}
+.journal-entry-copy{padding:28px 30px 32px}
+.journal-date{
+  color:var(--green2)!important;
+  font:700 12px "Barlow Condensed";
+  letter-spacing:1.8px;
+  margin:0 0 9px!important;
+}
+.journal-entry h3{
+  font:800 clamp(34px,4vw,50px)/.92 "Barlow Condensed";
+  letter-spacing:-1px;
+  margin:0 0 20px;
+}
+.journal-entry-copy p{
+  color:#c6cec9;
+  line-height:1.72;
+  margin:0 0 15px;
+}
+.journal-entry-copy strong{color:#fff}
+.journal-entry-featured{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:42% 58%;
+}
+.journal-entry-featured .journal-entry-photo{
+  height:auto;
+  min-height:560px;
+  background-position:center;
+}
+.journal-entry-signoff{
+  color:var(--green2)!important;
+  font:800 18px "Barlow Condensed";
+  letter-spacing:1.5px;
+  margin-top:25px!important;
+}
+@media(max-width:900px){
+  .journal-v2-grid{grid-template-columns:1fr}
+  .journal-entry-featured{
+    grid-column:auto;
+    display:block;
+  }
+  .journal-entry-featured .journal-entry-photo{
+    height:360px;
+    min-height:0;
+  }
+}
+@media(max-width:560px){
+  .journal-entry-photo{height:275px}
+  .journal-entry-featured .journal-entry-photo{height:290px}
+  .journal-entry-copy{padding:23px}
+  .journal-v2-header h2{font-size:60px}
+  .journal-v2-intro{font-size:16px}
+}
