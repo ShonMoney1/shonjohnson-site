@@ -308,17 +308,21 @@
         </article>
 
         <article class="journal-entry journal-entry-featured reveal">
-          <div class="journal-video-stack">
-            <video class="journal-training-video" controls playsinline preload="metadata"
-                   poster="assets/coach-matt-training-1.jpg">
-              <source src="assets/coach-matt-training-1.mp4" type="video/mp4">
-              Your browser does not support HTML5 video.
-            </video>
-            <video class="journal-training-video" controls playsinline preload="metadata"
-                   poster="assets/coach-matt-training-2.jpg">
-              <source src="assets/coach-matt-training-2.mp4" type="video/mp4">
-              Your browser does not support HTML5 video.
-            </video>
+          <div class="journal-training-media">
+            <button class="training-thumb" type="button"
+                    data-video="assets/coach-matt-training-1.mp4"
+                    aria-label="Play Coach Matt training video 1">
+              <img src="assets/coach-matt-training-1.jpg" alt="Basketball training with Coach Matt">
+              <span class="training-play">▶</span>
+              <span class="training-thumb-label">WORKOUT 01</span>
+            </button>
+            <button class="training-thumb" type="button"
+                    data-video="assets/coach-matt-training-2.mp4"
+                    aria-label="Play Coach Matt training video 2">
+              <img src="assets/coach-matt-training-2.jpg" alt="Basketball training with Coach Matt">
+              <span class="training-play">▶</span>
+              <span class="training-thumb-label">WORKOUT 02</span>
+            </button>
           </div>
           <div class="journal-entry-copy">
             <p class="journal-date">SUMMER 2026 • BASKETBALL TRAINING</p>
@@ -357,6 +361,15 @@
       <span>Football • Basketball • Lacrosse</span>
     </div>
   </footer>
+
+
+  <div class="video-modal" id="trainingVideoModal" hidden>
+    <div class="video-modal-backdrop" data-close-video></div>
+    <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-label="Training video player">
+      <button class="video-modal-close" type="button" data-close-video aria-label="Close video">×</button>
+      <video id="trainingVideoPlayer" controls playsinline preload="metadata"></video>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

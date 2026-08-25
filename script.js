@@ -1,20 +1,39 @@
 
-const menu = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-menu?.addEventListener('click', () => nav.classList.toggle('open'));
 
-document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
 
-const obs = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
+// Coach Matt training video modal
+(() => {
+  const modal = document.getElementById('trainingVideoModal');
+  const player = document.getElementById('trainingVideoPlayer');
+  const thumbs = document.querySelectorAll('.training-thumb[data-video]');
+  if (!modal || !player || !thumbs.length) return;
+
+  let lastTrigger = null;
+
+  const closeVideo = () => {
+    player.pause();
+    player.removeAttribute('src');
+    player.load();
+    modal.hidden = true;
+    document.body.classList.remove('video-modal-open');
+    if (lastTrigger) lastTrigger.focus();
+  };
+
+  thumbs.forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      lastTrigger = thumb;
+      player.src = thumb.dataset.video;
+      modal.hidden = false;
+      document.body.classList.add('video-modal-open');
+      player.play().catch(() => {});
+    });
   });
-}, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  modal.querySelectorAll('[data-close-video]').forEach((el) => {
+    el.addEventListener('click', closeVideo);
+  });
 
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  const hero = document.querySelector('.hero-bg');
-  if (hero && window.innerWidth > 900) hero.style.transform = `translateY(${y * 0.12}px) scale(1.03)`;
-});
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.hidden) closeVideo();
+  });
+})();
