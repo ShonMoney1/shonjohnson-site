@@ -154,3 +154,51 @@ footer p,footer span{color:#9aa39d}
   .title-row{align-items:flex-start;gap:15px;flex-direction:column}
   .game-row{grid-template-columns:1fr}
 }
+
+
+
+/* 2026 football schedule */
+.season-record{font:800 46px/1 "Barlow Condensed";color:var(--green2);letter-spacing:-1px}
+.game-feature{display:grid;grid-template-columns:1fr 1px 1fr;gap:28px;align-items:stretch;margin:0 0 30px;padding:26px;border:1px solid var(--line);background:radial-gradient(circle at 10% 0%,rgba(24,163,99,.15),transparent 35%),#080b09}
+.game-feature-divider{background:var(--line)}
+.game-feature-block{display:grid;grid-template-columns:1fr auto;gap:5px 20px;align-items:end}
+.game-feature-label{grid-column:1/-1;color:var(--green2);font:700 12px "Barlow Condensed";letter-spacing:2px}
+.game-feature-block strong{font:700 27px/1.05 "Barlow Condensed";text-transform:uppercase}
+.game-feature-block>span:not(.game-feature-label){color:#9ea8a2;font:500 14px "Barlow Condensed"}
+.game-feature-block b{grid-column:2;grid-row:2/4;align-self:center}
+.result-win,.home-tag,.away-tag{display:inline-flex;align-items:center;justify-content:center;min-width:74px;padding:8px 11px;border-radius:2px;font:800 13px "Barlow Condensed";letter-spacing:1px;white-space:nowrap}
+.result-win{background:var(--green2);color:#041109}
+.home-tag{border:1px solid rgba(24,163,99,.6);color:var(--green2);background:rgba(24,163,99,.08)}
+.away-tag{border:1px solid rgba(199,163,77,.55);color:var(--gold);background:rgba(199,163,77,.07)}
+.schedule{border-top:1px solid var(--line)}
+.schedule-head,.schedule-row{display:grid;grid-template-columns:120px minmax(280px,1.4fr) 130px minmax(220px,1fr) 100px;gap:22px;align-items:center}
+.schedule-head{padding:10px 16px;color:#68726c;font:700 11px "Barlow Condensed";letter-spacing:1.5px;text-transform:uppercase}
+.schedule-row{position:relative;min-height:82px;padding:17px 16px;border-bottom:1px solid var(--line);transition:background .2s ease}
+.schedule-row:hover{background:rgba(255,255,255,.025)}
+.schedule-row.next{background:linear-gradient(90deg,rgba(24,163,99,.09),transparent 65%)}
+.schedule-row.next::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--green2)}
+.schedule-row.completed{opacity:.9}
+.schedule-row .date{display:flex;flex-direction:column}
+.schedule-row .date b{font:800 21px "Barlow Condensed"}
+.schedule-row .date small{font:600 11px "Barlow Condensed";color:#77817b;letter-spacing:1px}
+.schedule-row .opponent{font:700 20px "Barlow Condensed";text-transform:uppercase}
+.schedule-row>span:not(.date):not(.opponent){color:#aab2ad;font-size:14px}
+@media(max-width:900px){
+  .game-feature{grid-template-columns:1fr}
+  .game-feature-divider{height:1px}
+  .schedule-head{display:none}
+  .schedule-row{grid-template-columns:90px 1fr auto;gap:10px 16px}
+  .schedule-row .opponent{grid-column:2/4}
+  .schedule-row>span:nth-child(3){grid-column:2}
+  .schedule-row>span:nth-child(4){grid-column:2/3}
+  .schedule-row>span:nth-child(5){grid-column:3;grid-row:3/5}
+}
+@media(max-width:560px){
+  .season-record{font-size:36px}
+  .game-feature-block{grid-template-columns:1fr}
+  .game-feature-block b{grid-column:1;grid-row:auto;justify-self:start;margin-top:8px}
+  .schedule-row{grid-template-columns:76px 1fr}
+  .schedule-row .opponent{grid-column:2}
+  .schedule-row>span:nth-child(3),.schedule-row>span:nth-child(4){grid-column:2}
+  .schedule-row>span:nth-child(5){grid-column:2;grid-row:auto;justify-self:start;margin-top:4px}
+}
