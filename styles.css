@@ -338,3 +338,18 @@ body.video-modal-open{overflow:hidden}
     font-size:145px;
   }
 }
+
+/* V2.2 — Season opener image */
+.highlight-card-featured .thumb > img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.highlight-card-featured .thumb::after{
+  content:none !important;
+}
+.season-opener-bg{
+  display:none !important;
+}
