@@ -353,3 +353,55 @@ body.video-modal-open{overflow:hidden}
 .season-opener-bg{
   display:none !important;
 }
+
+
+/* V2.3 — clean mobile hero */
+@media(max-width:900px){
+  .hero{
+    min-height:820px;
+    padding-top:110px;
+    padding-bottom:58px;
+    align-items:flex-end;
+  }
+
+  .hero-bg{
+    background:
+      linear-gradient(180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.10) 35%,rgba(5,7,6,.92) 82%,#050706 100%),
+      linear-gradient(90deg,rgba(0,0,0,.18),rgba(0,0,0,.04)),
+      url('assets/hero-mobile.jpg') center 10%/cover no-repeat;
+    filter:saturate(.88) contrast(1.04);
+  }
+
+  .hero::after{
+    background:linear-gradient(to top,#050706 3%,rgba(5,7,6,.72) 30%,rgba(0,0,0,.08) 66%,transparent 100%);
+  }
+
+  .hero-copy{
+    max-width:100%;
+    padding-bottom:6px;
+  }
+}
+
+@media(max-width:560px){
+  .hero{
+    min-height:760px;
+    padding:100px 20px 46px;
+  }
+
+  .hero-bg{
+    background-position:center top;
+  }
+
+  .hero h1{
+    font-size:58px;
+    line-height:.79;
+  }
+
+  .hero .eyebrow{
+    margin-bottom:11px;
+  }
+
+  .hero-actions{
+    margin-top:22px;
+  }
+}
