@@ -256,3 +256,49 @@ body.video-modal-open{overflow:hidden}
   .video-modal{padding:12px}
 }
 
+
+/* ===== V2 athlete-brand refinement ===== */
+.season-rail{position:relative;z-index:4;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:-1px 5vw 0;border:1px solid var(--line);background:rgba(7,12,9,.96);box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.season-rail div{min-width:0;padding:18px 20px;border-right:1px solid var(--line)}
+.season-rail div:last-child{border-right:0}
+.season-rail span{display:block;margin-bottom:5px;color:var(--green2);font:700 10px "Barlow Condensed";letter-spacing:1.7px}
+.season-rail strong{display:block;overflow:hidden;text-overflow:ellipsis;color:#fff;font:700 18px "Barlow Condensed";text-transform:uppercase;white-space:nowrap}
+.highlight-grid-v2{grid-template-columns:minmax(0,1.55fr) minmax(330px,.8fr);align-items:stretch}
+.highlight-card-featured{display:grid;grid-template-rows:minmax(330px,1fr) auto}
+.highlight-card-featured .thumb{aspect-ratio:auto;min-height:330px}
+.highlight-card-featured .highlight-info{padding:25px 26px 27px}
+.highlight-card-featured .highlight-info h3{font-size:34px;margin:4px 0 8px}
+.highlight-card-featured .highlight-info p{margin:0 0 16px;color:#aeb7b1;line-height:1.55}
+.highlight-side-stack{display:grid;grid-template-rows:1fr 1fr;gap:18px}
+.highlight-side-stack .highlight-card{display:grid;grid-template-columns:42% 58%;min-height:0}
+.highlight-side-stack .thumb{aspect-ratio:auto;min-height:190px}
+.highlight-side-stack .highlight-info{display:flex;flex-direction:column;justify-content:center}
+.highlight-side-stack .highlight-info h3{font-size:22px}
+.thumb-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.62),transparent 60%)}
+.highlight-kicker{position:absolute;left:15px;top:15px;z-index:2;padding:7px 9px;background:rgba(5,7,6,.82);border:1px solid rgba(255,255,255,.2);color:#fff;font:700 10px "Barlow Condensed";letter-spacing:1.5px}
+.score-badge{position:absolute;left:18px;bottom:17px;z-index:2;color:#fff;font:800 34px/1 "Barlow Condensed";letter-spacing:-1px}
+.highlight-date{color:var(--green2)!important;font-size:12px!important;letter-spacing:1.5px!important}
+.highlight-cta{display:inline-block;color:#fff!important;font-size:13px!important;letter-spacing:1.2px!important}
+.sport-card::after{content:"";position:absolute;inset:0;border:1px solid transparent;pointer-events:none;transition:border-color .25s ease}
+.sport-card:hover::after{border-color:rgba(24,163,99,.5)}
+.sport-copy a{transition:background .2s ease,border-color .2s ease}
+.sport-copy a:hover{background:var(--green);border-color:var(--green)}
+@media(max-width:1050px){
+  .season-rail{grid-template-columns:repeat(3,1fr)}
+  .highlight-grid-v2{grid-template-columns:1fr}
+  .highlight-side-stack{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .highlight-side-stack .highlight-card{display:block}
+  .highlight-side-stack .thumb{aspect-ratio:16/9}
+}
+@media(max-width:700px){
+  .season-rail{margin:0;grid-template-columns:repeat(2,1fr);border-left:0;border-right:0}
+  .season-rail div{padding:14px 16px;border-top:1px solid var(--line)}
+  .season-rail div:nth-child(-n+2){border-top:0}
+  .season-rail div:nth-child(even){border-right:0}
+  .season-rail div:last-child{grid-column:1/-1;border-right:0}
+  .season-rail strong{font-size:16px}
+  .highlight-side-stack{grid-template-columns:1fr}
+  .highlight-card-featured .thumb{min-height:260px}
+  .highlight-card-featured .highlight-info h3{font-size:29px}
+}
+
