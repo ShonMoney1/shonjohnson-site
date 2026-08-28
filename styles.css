@@ -43,7 +43,7 @@ a{color:inherit;text-decoration:none}
   background:
     linear-gradient(90deg,rgba(0,0,0,.97) 0%,rgba(0,0,0,.78) 30%,rgba(0,0,0,.15) 65%,rgba(0,0,0,.5) 100%),
     linear-gradient(0deg,#050706 0%,transparent 28%),
-    url('assets/football-look.png') center 17%/cover no-repeat;
+    url('assets/hero-nrcca-win.png') center center/cover no-repeat;
   filter:saturate(.85) contrast(1.04);
 }
 .hero-copy{position:relative;z-index:2;max-width:760px}
@@ -368,7 +368,7 @@ body.video-modal-open{overflow:hidden}
     background:
       linear-gradient(180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.10) 35%,rgba(5,7,6,.92) 82%,#050706 100%),
       linear-gradient(90deg,rgba(0,0,0,.18),rgba(0,0,0,.04)),
-      url('assets/hero-mobile.jpg') center 10%/cover no-repeat;
+      url('assets/hero-nrcca-win.png') 62% center/cover no-repeat;
     filter:saturate(.88) contrast(1.04);
   }
 
