@@ -19,8 +19,10 @@ button{font:inherit}
 .menu-toggle{display:none;border:0;background:none;color:#fff;font-size:26px}
 
 .hero-dashboard{position:relative;min-height:690px;display:grid;grid-template-columns:minmax(0,1.3fr) 360px;align-items:center;gap:42px;padding:105px 4.2vw 58px;overflow:hidden}
-.hero-photo{position:absolute;inset:0;background:url("assets/hero-approved.jpg") 56% 42%/cover no-repeat;filter:saturate(.92) contrast(1.06)}
-.hero-vignette{position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.86) 25%,rgba(1,4,2,.22) 49%,rgba(1,4,2,.18) 67%,rgba(1,4,2,.64) 100%),linear-gradient(to top,#040605 0%,transparent 22%,rgba(0,0,0,.12) 100%)}
+.hero-photo{position:absolute;inset:0;background-image:url("assets/hero-game2-real.jpg");background-repeat:no-repeat;background-size:150% auto;background-position:left 56%;filter:saturate(.92) contrast(1.06)}
+.hero-vignette{position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.82) 27%,rgba(1,4,2,.22) 60%,rgba(1,4,2,.60) 100%),
+  linear-gradient(to top,#040605 0%,transparent 20%,rgba(0,0,0,.15) 100%)}
 .hero-profile,.season-card{position:relative;z-index:2}
 .hero-profile{max-width:620px}
 .eyebrow{margin:0 0 12px;color:var(--green2);font:800 16px "Barlow Condensed";letter-spacing:1.8px}
@@ -176,7 +178,7 @@ body.video-modal-open{overflow:hidden}
   .nav{display:none;position:absolute;top:72px;left:0;right:0;background:#050706;padding:22px 5vw;flex-direction:column}
   .nav.open{display:flex}.menu-toggle{display:block}
   .hero-dashboard{display:block;min-height:auto;padding:125px 20px 35px}
-  .hero-photo{background-position:58% center}
+  .hero-photo{background-position:63% center}
   .hero-vignette{background:linear-gradient(to top,#040605 5%,rgba(0,0,0,.48) 54%,rgba(0,0,0,.32)),linear-gradient(90deg,rgba(0,0,0,.65),transparent)}
   .hero-profile{padding-top:260px}
   .hero-profile h1{font-size:72px;letter-spacing:-4px}
