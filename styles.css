@@ -19,7 +19,7 @@ button{font:inherit}
 .menu-toggle{display:none;border:0;background:none;color:#fff;font-size:26px}
 
 .hero-dashboard{position:relative;min-height:690px;display:grid;grid-template-columns:minmax(0,1.3fr) 360px;align-items:center;gap:42px;padding:105px 4.2vw 58px;overflow:hidden}
-.hero-photo{position:absolute;inset:0;background-image:url("assets/hero-game2-new.jpg");background-repeat:no-repeat;background-size:cover;background-position:center 46%;filter:saturate(.94) contrast(1.04)}
+.hero-photo{position:absolute;inset:0;background:url("assets/nrcca-action.jpg") 58% 42%/cover no-repeat;filter:saturate(.88) contrast(1.05)}
 .hero-vignette{position:absolute;inset:0;background:
   linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.82) 27%,rgba(1,4,2,.22) 60%,rgba(1,4,2,.60) 100%),
   linear-gradient(to top,#040605 0%,transparent 20%,rgba(0,0,0,.15) 100%)}
@@ -174,16 +174,93 @@ body.video-modal-open{overflow:hidden}
   .highlight-cards{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:800px){
-  .site-header{background:rgba(2,4,3,.94)}
-  .nav{display:none;position:absolute;top:72px;left:0;right:0;background:#050706;padding:22px 5vw;flex-direction:column}
-  .nav.open{display:flex}.menu-toggle{display:block}
-  .hero-dashboard{display:block;min-height:auto;padding:125px 20px 35px}
-  .hero-photo{background-position:63% center}
-  .hero-vignette{background:linear-gradient(to top,#040605 5%,rgba(0,0,0,.48) 54%,rgba(0,0,0,.32)),linear-gradient(90deg,rgba(0,0,0,.65),transparent)}
-  .hero-profile{padding-top:260px}
-  .hero-profile h1{font-size:72px;letter-spacing:-4px}
-  .season-card{margin-top:30px}
-  .football-dashboard{padding:12px}
+  .site-header{height:92px;padding:0 22px;background:rgba(2,4,3,.94)}
+  .brand{font-size:30px}
+  .nav{display:none;position:absolute;top:92px;left:0;right:0;background:#050706;padding:22px 5vw;flex-direction:column}
+  .nav.open{display:flex}
+  .menu-toggle{display:block}
+
+  .hero-dashboard{
+    display:block;
+    position:relative;
+    min-height:1080px;
+    padding:92px 20px 32px;
+    background:#040605;
+    overflow:hidden
+  }
+  .hero-photo{
+    display:block;
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:1080px;
+    min-height:0;
+    background-image:url("assets/hero-game2-new.jpg");
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+    background-position:88% center;
+    filter:saturate(.96) contrast(1.04)
+  }
+  .hero-vignette{
+    position:absolute;
+    inset:0;
+    height:1080px;
+    z-index:1;
+    background:
+      linear-gradient(90deg,rgba(1,4,2,.95) 0%,rgba(1,4,2,.84) 26%,rgba(1,4,2,.42) 45%,rgba(1,4,2,.06) 70%),
+      linear-gradient(to bottom,rgba(0,0,0,.10) 0%,rgba(0,0,0,.02) 68%,rgba(4,6,5,.70) 92%,#040605 100%)
+  }
+  .hero-profile{
+    position:relative;
+    z-index:2;
+    width:49%;
+    max-width:360px;
+    padding-top:235px
+  }
+  .hero-kicker{font-size:17px;line-height:1.12}
+  .hero-profile h1{
+    font-size:62px;
+    line-height:.80;
+    letter-spacing:-2.8px;
+    margin-top:14px
+  }
+  .hero-meta{
+    font-size:16px;
+    line-height:1.28;
+    max-width:100%;
+    margin-top:22px
+  }
+  .position-pills{
+    display:grid;
+    grid-template-columns:repeat(3,max-content);
+    gap:7px;
+    margin:20px 0
+  }
+  .position-pills span{padding:10px 12px;font-size:13px}
+  .hero-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:11px;
+    width:100%;
+    max-width:320px
+  }
+  .hero-actions .btn{
+    justify-content:center;
+    padding:14px 10px;
+    font-size:13px
+  }
+  .season-card{
+    position:relative;
+    z-index:3;
+    width:100%;
+    margin-top:64px;
+    padding:24px 20px;
+    border-radius:10px;
+    background:linear-gradient(180deg,#06110c,#040a07);
+    box-shadow:none
+  }
+
+  .football-dashboard{grid-template-columns:1fr;padding:12px}
   .highlight-cards{grid-template-columns:1fr 1fr}
   .media-card-featured{grid-column:1/-1;height:340px}
   .season-rail{grid-template-columns:1fr 1fr;margin:0 12px 14px}
@@ -194,15 +271,64 @@ body.video-modal-open{overflow:hidden}
   .about-photo{height:500px}
   .journal-v2-grid{grid-template-columns:1fr}
   .journal-entry-featured{grid-column:auto;display:block}
-  footer{grid-template-columns:1fr}.footer-right{align-items:flex-start}
+  footer{grid-template-columns:1fr}
+  .footer-right{align-items:flex-start}
 }
 @media(max-width:520px){
-  .hero-profile{padding-top:220px}
-  .hero-profile h1{font-size:58px}
-  .hero-meta{font-size:16px}
-  .position-pills{flex-wrap:wrap}
-  .hero-actions{flex-direction:column;align-items:flex-start}
-  .season-card{padding:20px}
+  .hero-dashboard{
+    min-height:900px;
+    padding:92px 14px 26px
+  }
+  .hero-photo{
+    height:900px;
+    background-size:auto 100%;
+    background-position:88% center
+  }
+  .hero-vignette{
+    height:900px;
+    background:
+      linear-gradient(90deg,rgba(1,4,2,.96) 0%,rgba(1,4,2,.86) 27%,rgba(1,4,2,.40) 47%,rgba(1,4,2,.04) 72%),
+      linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(0,0,0,.02) 67%,rgba(4,6,5,.68) 91%,#040605 100%)
+  }
+  .hero-profile{
+    width:48%;
+    max-width:205px;
+    padding-top:190px
+  }
+  .hero-kicker{font-size:13px}
+  .hero-profile h1{
+    font-size:43px;
+    line-height:.80;
+    letter-spacing:-2px;
+    margin-top:12px
+  }
+  .hero-meta{
+    font-size:12px;
+    line-height:1.28;
+    margin-top:17px
+  }
+  .position-pills{
+    grid-template-columns:repeat(3,max-content);
+    gap:5px;
+    margin:15px 0
+  }
+  .position-pills span{
+    padding:8px 8px;
+    font-size:10px
+  }
+  .hero-actions{
+    max-width:195px;
+    gap:9px
+  }
+  .hero-actions .btn{
+    padding:12px 6px;
+    font-size:11px
+  }
+  .season-card{
+    margin-top:48px;
+    padding:21px 17px
+  }
+
   .score-line strong{font-size:40px}
   .highlight-cards{grid-template-columns:1fr}
   .media-card,.media-card-featured{grid-column:auto;height:290px}
