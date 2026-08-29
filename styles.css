@@ -174,26 +174,12 @@ body.video-modal-open{overflow:hidden}
   .highlight-cards{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:800px){
-  .site-header{
-    height:92px;
-    padding:0 22px;
-    background:rgba(2,4,3,.94)
-  }
+  .site-header{height:92px;padding:0 22px;background:rgba(2,4,3,.94)}
   .brand{font-size:30px}
-  .nav{
-    display:none;
-    position:absolute;
-    top:92px;
-    left:0;
-    right:0;
-    background:#050706;
-    padding:22px 5vw;
-    flex-direction:column
-  }
+  .nav{display:none;position:absolute;top:92px;left:0;right:0;background:#050706;padding:22px 5vw;flex-direction:column}
   .nav.open{display:flex}
   .menu-toggle{display:block}
 
-  /* MOBILE HERO — text left, #22 large on the right */
   .hero-dashboard{
     display:block;
     position:relative;
@@ -212,10 +198,8 @@ body.video-modal-open{overflow:hidden}
     min-height:0;
     background-image:url("assets/hero-qb-holding-ball.jpg");
     background-repeat:no-repeat;
-    /* Zoom removes the empty field above him */
-    background-size:auto 120%;
-    /* Lower percentage moves the subject farther RIGHT */
-    background-position:40% center;
+    background-size:auto 114%;
+    background-position:47% 58%;
     filter:saturate(.96) contrast(1.04)
   }
 
@@ -227,15 +211,15 @@ body.video-modal-open{overflow:hidden}
     background:
       linear-gradient(90deg,
         rgba(1,4,2,.99) 0%,
-        rgba(1,4,2,.94) 22%,
-        rgba(1,4,2,.72) 38%,
-        rgba(1,4,2,.30) 52%,
-        rgba(1,4,2,.06) 66%,
-        rgba(1,4,2,.00) 78%),
+        rgba(1,4,2,.94) 23%,
+        rgba(1,4,2,.70) 40%,
+        rgba(1,4,2,.28) 55%,
+        rgba(1,4,2,.05) 68%,
+        rgba(1,4,2,0) 80%),
       linear-gradient(to bottom,
-        rgba(0,0,0,.02) 0%,
-        rgba(0,0,0,.00) 70%,
-        rgba(4,6,5,.55) 89%,
+        rgba(0,0,0,.03) 0%,
+        rgba(0,0,0,0) 70%,
+        rgba(4,6,5,.52) 89%,
         #040605 100%)
   }
 
@@ -247,11 +231,7 @@ body.video-modal-open{overflow:hidden}
     padding-top:118px
   }
 
-  .eyebrow{
-    font-size:14px;
-    line-height:1.12;
-    margin-bottom:12px
-  }
+  .eyebrow{font-size:14px;line-height:1.12;margin-bottom:12px}
 
   .hero-profile h1{
     font-size:47px;
@@ -273,10 +253,7 @@ body.video-modal-open{overflow:hidden}
     margin:16px 0
   }
 
-  .position-pills span{
-    padding:8px 9px;
-    font-size:10px
-  }
+  .position-pills span{padding:8px 9px;font-size:10px}
 
   .hero-actions{
     display:grid;
@@ -327,8 +304,8 @@ body.video-modal-open{overflow:hidden}
     height:820px;
     background-image:url("assets/hero-qb-holding-ball.jpg");
     background-repeat:no-repeat;
-    background-size:auto 122%;
-    background-position:39% center
+    background-size:auto 114%;
+    background-position:47% 60%
   }
 
   .hero-vignette{height:820px}
@@ -336,7 +313,7 @@ body.video-modal-open{overflow:hidden}
   .hero-profile{
     width:48%;
     max-width:205px;
-    padding-top:108px
+    padding-top:106px
   }
 
   .eyebrow{font-size:13px}
@@ -359,10 +336,7 @@ body.video-modal-open{overflow:hidden}
     margin:14px 0
   }
 
-  .position-pills span{
-    padding:8px 8px;
-    font-size:10px
-  }
+  .position-pills span{padding:8px 8px;font-size:10px}
 
   .hero-actions{
     max-width:200px;
