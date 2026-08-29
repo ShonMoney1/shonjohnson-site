@@ -19,7 +19,7 @@ button{font:inherit}
 .menu-toggle{display:none;border:0;background:none;color:#fff;font-size:26px}
 
 .hero-dashboard{position:relative;min-height:690px;display:grid;grid-template-columns:minmax(0,1.3fr) 360px;align-items:center;gap:42px;padding:105px 4.2vw 58px;overflow:hidden}
-.hero-photo{position:absolute;inset:0;background:url("assets/nrcca-action.jpg") 58% 42%/cover no-repeat;filter:saturate(.88) contrast(1.05)}
+.hero-photo{position:absolute;inset:0;background:url("assets/hero-qb-holding-ball.jpg") center 46%/cover no-repeat;filter:saturate(.94) contrast(1.04)}
 .hero-vignette{position:absolute;inset:0;background:
   linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.82) 27%,rgba(1,4,2,.22) 60%,rgba(1,4,2,.60) 100%),
   linear-gradient(to top,#040605 0%,transparent 20%,rgba(0,0,0,.15) 100%)}
@@ -195,10 +195,10 @@ body.video-modal-open{overflow:hidden}
     width:100%;
     height:1080px;
     min-height:0;
-    background-image:url("assets/hero-game2-new.jpg");
+    background-image:url("assets/hero-qb-holding-ball.jpg");
     background-repeat:no-repeat;
     background-size:auto 100%;
-    background-position:88% center;
+    background-position:50% center;
     filter:saturate(.96) contrast(1.04)
   }
   .hero-vignette{
@@ -207,7 +207,7 @@ body.video-modal-open{overflow:hidden}
     height:1080px;
     z-index:1;
     background:
-      linear-gradient(90deg,rgba(1,4,2,.95) 0%,rgba(1,4,2,.84) 26%,rgba(1,4,2,.42) 45%,rgba(1,4,2,.06) 70%),
+      linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.90) 25%,rgba(1,4,2,.58) 43%,rgba(1,4,2,.10) 64%),
       linear-gradient(to bottom,rgba(0,0,0,.10) 0%,rgba(0,0,0,.02) 68%,rgba(4,6,5,.70) 92%,#040605 100%)
   }
   .hero-profile{
@@ -287,7 +287,7 @@ body.video-modal-open{overflow:hidden}
   .hero-vignette{
     height:900px;
     background:
-      linear-gradient(90deg,rgba(1,4,2,.96) 0%,rgba(1,4,2,.86) 27%,rgba(1,4,2,.40) 47%,rgba(1,4,2,.04) 72%),
+      linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.91) 25%,rgba(1,4,2,.58) 43%,rgba(1,4,2,.08) 64%),
       linear-gradient(to bottom,rgba(0,0,0,.08) 0%,rgba(0,0,0,.02) 67%,rgba(4,6,5,.68) 91%,#040605 100%)
   }
   .hero-profile{
