@@ -19,7 +19,7 @@ button{font:inherit}
 .menu-toggle{display:none;border:0;background:none;color:#fff;font-size:26px}
 
 .hero-dashboard{position:relative;min-height:690px;display:grid;grid-template-columns:minmax(0,1.3fr) 360px;align-items:center;gap:42px;padding:105px 4.2vw 58px;overflow:hidden}
-.hero-photo{position:absolute;inset:0;background-image:url("assets/hero-game2-real.jpg");background-repeat:no-repeat;background-size:150% auto;background-position:left 56%;filter:saturate(.92) contrast(1.06)}
+.hero-photo{position:absolute;inset:0;background-image:url("assets/hero-game2-new.jpg");background-repeat:no-repeat;background-size:cover;background-position:center 46%;filter:saturate(.94) contrast(1.04)}
 .hero-vignette{position:absolute;inset:0;background:
   linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.82) 27%,rgba(1,4,2,.22) 60%,rgba(1,4,2,.60) 100%),
   linear-gradient(to top,#040605 0%,transparent 20%,rgba(0,0,0,.15) 100%)}
