@@ -522,3 +522,31 @@ body.video-modal-open{overflow:hidden}
   }
   .media-card-featured:hover img{transform:scale(1.26)}
 }
+
+/* Individual highlight crops: bring #22 closer on cards 2 and 3 */
+.media-card-run-support img{
+  object-position:40% 48%;
+  transform:scale(1.34);
+  transform-origin:40% 48%;
+}
+.media-card-run-support:hover img{transform:scale(1.38)}
+.media-card-pass-defense img{
+  object-position:52% 42%;
+  transform:scale(1.42);
+  transform-origin:52% 42%;
+}
+.media-card-pass-defense:hover img{transform:scale(1.46)}
+@media(max-width:800px){
+  .media-card-run-support img{
+    object-position:40% 48%;
+    transform:scale(1.28);
+    transform-origin:40% 48%;
+  }
+  .media-card-run-support:hover img{transform:scale(1.32)}
+  .media-card-pass-defense img{
+    object-position:52% 42%;
+    transform:scale(1.34);
+    transform-origin:52% 42%;
+  }
+  .media-card-pass-defense:hover img{transform:scale(1.38)}
+}
