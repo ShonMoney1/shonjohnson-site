@@ -506,3 +506,19 @@ body.video-modal-open{overflow:hidden}
   }
 }
 
+
+/* Game 5 featured highlight: tighter crop centered on #22 */
+.media-card-featured img{
+  object-position:50% 38%;
+  transform:scale(1.42);
+  transform-origin:50% 38%;
+}
+.media-card-featured:hover img{transform:scale(1.46)}
+@media(max-width:800px){
+  .media-card-featured img{
+    object-position:50% 38%;
+    transform:scale(1.32);
+    transform-origin:50% 38%;
+  }
+  .media-card-featured:hover img{transform:scale(1.36)}
+}
