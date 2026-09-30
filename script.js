@@ -86,3 +86,13 @@ window.addEventListener('load', () => {
     if (status) status.textContent = 'HUDL LINKED';
   }
 })();
+
+// Football photo gallery lightbox
+(() => {
+ const box=document.getElementById('photoLightbox'), full=document.getElementById('photoLightboxImage');
+ if(!box||!full)return;
+ const close=()=>{box.hidden=true;full.removeAttribute('src');document.body.style.overflow=''};
+ document.querySelectorAll('.gallery-photo img').forEach(img=>img.closest('.gallery-photo').addEventListener('click',()=>{full.src=img.src;full.alt=img.alt;box.hidden=false;document.body.style.overflow='hidden'}));
+ box.addEventListener('click',e=>{if(e.target===box||e.target.classList.contains('photo-lightbox-close'))close()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!box.hidden)close()});
+})();
