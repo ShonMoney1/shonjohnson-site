@@ -632,3 +632,19 @@ body.video-modal-open{overflow:hidden}
 
 /* Dedicated football highlights and game galleries */
 .gallery-page{background:#040605}.gallery-main{padding:130px 4vw 80px;min-height:80vh}.gallery-hero,.game-page-hero{max-width:1100px;margin:0 auto 38px}.gallery-hero h1,.game-page-hero h1{margin:0;font:800 clamp(58px,8vw,110px)/.82 "Barlow Condensed";letter-spacing:-3px}.gallery-hero h1 span,.game-page-hero h1 span{color:var(--green2)}.gallery-hero>p:last-child,.game-page-hero>p:last-child{color:#b9c2bc;font-size:17px}.game-page-hero>a{display:inline-block;margin-bottom:24px;color:var(--gold);font:700 14px "Barlow Condensed";letter-spacing:.8px}.game-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.game-tile{display:block;border:1px solid var(--line);background:#070a08;overflow:hidden}.game-tile img{height:310px;object-fit:cover}.game-tile>div{padding:20px}.game-tile span{color:var(--green2);font:700 12px "Barlow Condensed";letter-spacing:1px}.game-tile h2{font:800 28px/.95 "Barlow Condensed";margin:7px 0}.game-tile strong,.game-tile em{display:block;font:700 13px "Barlow Condensed";font-style:normal}.game-tile em{margin-top:18px;color:var(--gold)}.game-tile:hover img{transform:scale(1.025)}.game-tile img{transition:transform .3s}.game-tile-muted{opacity:.68}.photo-grid{max-width:1250px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.gallery-photo{padding:0;border:0;background:#111;cursor:zoom-in;height:340px;overflow:hidden}.gallery-photo img{height:100%;object-fit:cover;transition:transform .25s}.gallery-photo:hover img{transform:scale(1.025)}.gallery-photo-wide{grid-column:span 2}.gallery-actions{max-width:1250px;margin:26px auto 0;display:flex;justify-content:space-between;gap:14px}.photo-lightbox[hidden]{display:none}.photo-lightbox{position:fixed;z-index:2000;inset:0;background:rgba(0,0,0,.94);display:grid;place-items:center;padding:35px}.photo-lightbox img{width:auto;max-width:94vw;max-height:90vh;object-fit:contain}.photo-lightbox-close{position:fixed;right:22px;top:18px;border:0;background:none;color:#fff;font-size:44px;cursor:pointer;z-index:2001}@media(max-width:800px){.gallery-main{padding:120px 18px 60px}.game-grid{grid-template-columns:1fr}.game-tile img{height:280px}.photo-grid{grid-template-columns:1fr 1fr}.gallery-photo,.gallery-photo-wide{grid-column:auto;height:280px}}@media(max-width:520px){.photo-grid{grid-template-columns:1fr}.gallery-photo{height:300px}.gallery-actions{flex-direction:column}.gallery-actions .btn{justify-content:center}}
+
+/* Mobile hero correction: feature Shon #22, not opponent #12 */
+@media(max-width:800px){
+  .hero-photo{
+    background-image:url("assets/hero-coverage-22.png.png") !important;
+    background-size:auto 100% !important;
+    background-position:42% center !important;
+  }
+}
+@media(max-width:520px){
+  .hero-photo{
+    background-image:url("assets/hero-coverage-22.png.png") !important;
+    background-size:auto 100% !important;
+    background-position:39% center !important;
+  }
+}
