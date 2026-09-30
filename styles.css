@@ -550,3 +550,30 @@ body.video-modal-open{overflow:hidden}
   }
   .media-card-pass-defense:hover img{transform:scale(1.38)}
 }
+
+/* 2026-09-30 hero refresh: #22 in coverage */
+.hero-photo{
+  background-image:url("assets/hero-coverage-22.png.png") !important;
+  background-size:cover !important;
+  background-position:62% 52% !important;
+  filter:saturate(1.04) contrast(1.06) !important;
+}
+.hero-vignette{
+  background:
+    linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.84) 27%,rgba(1,4,2,.28) 53%,rgba(1,4,2,.08) 72%,rgba(1,4,2,.28) 100%),
+    linear-gradient(to top,#040605 0%,transparent 22%,rgba(0,0,0,.10) 100%) !important;
+}
+@media(max-width:800px){
+  .hero-photo{
+    background-image:url("assets/hero-coverage-22.png.png") !important;
+    background-size:cover !important;
+    background-position:61% center !important;
+  }
+}
+@media(max-width:520px){
+  .hero-photo{
+    background-image:url("assets/hero-coverage-22.png.png") !important;
+    background-size:auto 100% !important;
+    background-position:61% center !important;
+  }
+}
