@@ -593,3 +593,19 @@ body.video-modal-open{overflow:hidden}
   }
   .media-card-run-support:hover img{transform:scale(1.29) !important}
 }
+
+/* Card 2 reframe: preserve #22/team celebration and tackled opponent */
+.media-card-run-support img{
+  object-position:47% 58% !important;
+  transform:scale(1.12) !important;
+  transform-origin:47% 58% !important;
+}
+.media-card-run-support:hover img{transform:scale(1.16) !important}
+@media(max-width:800px){
+  .media-card-run-support img{
+    object-position:47% 58% !important;
+    transform:scale(1.08) !important;
+    transform-origin:47% 58% !important;
+  }
+  .media-card-run-support:hover img{transform:scale(1.12) !important}
+}
