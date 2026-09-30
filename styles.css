@@ -577,3 +577,19 @@ body.video-modal-open{overflow:hidden}
     background-position:61% center !important;
   }
 }
+
+/* Updated Game 5 card 2 photo: frame #22 prominently */
+.media-card-run-support img{
+  object-position:63% 48% !important;
+  transform:scale(1.32) !important;
+  transform-origin:63% 48% !important;
+}
+.media-card-run-support:hover img{transform:scale(1.36) !important}
+@media(max-width:800px){
+  .media-card-run-support img{
+    object-position:63% 48% !important;
+    transform:scale(1.25) !important;
+    transform-origin:63% 48% !important;
+  }
+  .media-card-run-support:hover img{transform:scale(1.29) !important}
+}
