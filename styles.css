@@ -648,3 +648,6 @@ body.video-modal-open{overflow:hidden}
     background-position:39% center !important;
   }
 }
+
+/* Score-only highlight card for games without action photos */
+.game-tile-score{min-height:430px;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,rgba(0,155,90,.16),transparent 48%),#070a08}.game-tile-score>div{width:100%;text-align:center;padding:42px 22px}.game-tile-score .big-score{font:800 clamp(72px,8vw,112px)/.9 "Barlow Condensed";color:#fff;margin:20px 0 12px;letter-spacing:-3px}.game-tile-score h2{margin-top:10px}.game-tile-score strong{color:var(--green2)}
