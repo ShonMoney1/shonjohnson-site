@@ -681,3 +681,12 @@ body.video-modal-open{overflow:hidden}
     background-position:50% 18% !important;
   }
 }
+
+/* Desktop portrait framing correction: keep Shon's full head/hair visible */
+@media(min-width:801px){
+  .hero-photo{
+    background-image:url("assets/hero-shon-22-portrait.png") !important;
+    background-size:cover !important;
+    background-position:72% 18% !important;
+  }
+}
