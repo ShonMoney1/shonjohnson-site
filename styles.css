@@ -651,3 +651,33 @@ body.video-modal-open{overflow:hidden}
 
 /* Score-only highlight card for games without action photos */
 .game-tile-score{min-height:430px;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,rgba(0,155,90,.16),transparent 48%),#070a08}.game-tile-score>div{width:100%;text-align:center;padding:42px 22px}.game-tile-score .big-score{font:800 clamp(72px,8vw,112px)/.9 "Barlow Condensed";color:#fff;margin:20px 0 12px;letter-spacing:-3px}.game-tile-score h2{margin-top:10px}.game-tile-score strong{color:var(--green2)}
+
+/* 2026-10-07 homepage hero: official #22 portrait */
+.hero-photo{
+  background-image:url("assets/hero-shon-22-portrait.png") !important;
+  background-size:cover !important;
+  background-position:72% 38% !important;
+  filter:saturate(1.02) contrast(1.04) !important;
+}
+.hero-vignette{
+  background:
+    linear-gradient(90deg,rgba(1,4,2,.98) 0%,rgba(1,4,2,.88) 27%,rgba(1,4,2,.42) 48%,rgba(1,4,2,.08) 70%,rgba(1,4,2,.16) 100%),
+    linear-gradient(to top,#040605 0%,transparent 22%,rgba(0,0,0,.06) 100%) !important;
+}
+@media(max-width:800px){
+  .hero-photo{
+    background-image:url("assets/hero-shon-22-portrait.png") !important;
+    background-size:cover !important;
+    background-position:50% 24% !important;
+  }
+  .hero-vignette{
+    background:linear-gradient(to bottom,rgba(0,0,0,.05) 0%,rgba(0,0,0,.12) 25%,rgba(0,0,0,.60) 58%,rgba(2,5,3,.92) 100%) !important;
+  }
+}
+@media(max-width:520px){
+  .hero-photo{
+    background-image:url("assets/hero-shon-22-portrait.png") !important;
+    background-size:cover !important;
+    background-position:50% 18% !important;
+  }
+}
