@@ -690,3 +690,25 @@ body.video-modal-open{overflow:hidden}
     background-position:72% 18% !important;
   }
 }
+
+
+/* 2026 JV finale: undefeated football and basketball transition */
+.season-transition{max-width:1320px;margin:22px auto 60px;padding:30px 4vw;display:flex;justify-content:space-between;align-items:center;gap:35px;border-top:1px solid rgba(213,186,105,.35);border-bottom:1px solid rgba(213,186,105,.25);background:linear-gradient(110deg,#070c09,#102017 60%,#050806);color:#fff}
+.season-transition>div:first-child{max-width:760px}
+.season-transition .transition-eyebrow,.season-transition .transition-next>span{font:700 13px "Barlow Condensed",sans-serif;letter-spacing:2px;color:#d8c27d}
+.season-transition h2{font:800 clamp(54px,7vw,100px)/.92 "Barlow Condensed",sans-serif;margin:10px 0}
+.season-transition h2 span{color:var(--green2)}
+.season-transition p{line-height:1.6;color:#c3cdc5;margin:12px 0}
+.transition-next{border-left:1px solid rgba(255,255,255,.2);padding:20px 0 20px 30px;min-width:210px}
+.transition-next strong{display:block;font:800 42px/.98 "Barlow Condensed",sans-serif;margin:12px 0}
+.transition-next a{display:inline-block;color:#e0cd88;text-decoration:none;font:700 14px "Barlow Condensed",sans-serif;letter-spacing:1px}
+.media-card-game8{background:radial-gradient(circle at 70% 45%,rgba(20,76,47,.6),transparent 70%),#050806}
+.media-card-game8 img{object-position:50% 45% !important;transform:scale(1) !important}
+.media-card-game8:hover img{transform:scale(1.035) !important}
+.game8-tile{background:radial-gradient(circle at 50% 32%,rgba(24,88,52,.32),transparent 70%),#07100b;min-height:460px}
+.game8-tile img[hidden]{display:none}
+.gallery-photo[hidden]{display:none}
+.gallery-photo-message{max-width:1250px;margin:15px auto 36px;padding:28px;background:#0c160f;border:1px solid rgba(218,194,113,.32);color:#c5d2c9}
+.gallery-photo-message strong{color:#dfcd8d;font:700 18px "Barlow Condensed",sans-serif;letter-spacing:1px}
+.gallery-photo-message p{max-width:650px;line-height:1.5}
+@media(max-width:800px){.season-transition{margin:12px 16px 35px;flex-direction:column;align-items:stretch;gap:10px;padding:28px 22px}.transition-next{border-left:0;border-top:1px solid rgba(255,255,255,.2);padding:20px 0 0}}
