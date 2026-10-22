@@ -791,3 +791,49 @@ body.video-modal-open{overflow:hidden}
   .chapter-stat{margin-top:28px}
   .home-life-images{height:205px}
 }
+
+/* FOOTBALL HERO: preserve the entire original portrait and a one-line headline. */
+.football-hero{
+  min-height:610px;
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  align-items:center;
+  gap:24px;
+  padding:110px 5vw 50px;
+  background:radial-gradient(circle at 80% 40%,rgba(24,78,44,.37),transparent 53%),linear-gradient(120deg,#040605,#08110b 55%,#040605);
+}
+.football-hero .chapter-intro{max-width:100%;min-width:0}
+.football-hero .chapter-intro h1{
+  font-size:clamp(43px,5.65vw,84px);
+  line-height:1;
+  letter-spacing:-1.8px;
+  white-space:nowrap;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.football-hero-photo{display:flex;justify-content:center;align-items:center;min-width:0}
+.football-hero-photo img{
+  display:block;width:100%;height:auto;max-height:545px;
+  object-fit:contain;object-position:center top;
+  filter:drop-shadow(0 22px 35px rgba(0,0,0,.5));
+}
+.football-record-strip{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;
+  max-width:1320px;margin:auto;padding:22px 4vw;
+  background:#08140c;border-bottom:1px solid rgba(24,160,88,.36);
+}
+.football-record-strip span{color:#bfcfc5;font:700 14px "Barlow Condensed",sans-serif;letter-spacing:1.4px}
+.football-record-strip strong{font:800 clamp(30px,4vw,50px)/1 "Barlow Condensed",sans-serif;color:#fff}
+@media(max-width:800px){
+  .football-hero{
+    display:flex;flex-direction:column;align-items:stretch;gap:16px;
+    min-height:0;padding:95px 22px 38px;
+  }
+  .football-hero-photo{order:-1;max-height:none}
+  .football-hero-photo img{width:auto;max-width:100%;height:auto;max-height:470px;object-fit:contain}
+  .football-hero .chapter-intro h1{
+    font-size:clamp(32px,8.5vw,60px);letter-spacing:-1px;white-space:nowrap;
+  }
+  .football-record-strip{justify-content:center;text-align:center;padding:20px}
+  .football-record-strip span{width:100%}
+}
