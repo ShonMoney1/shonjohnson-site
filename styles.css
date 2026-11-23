@@ -761,3 +761,15 @@ body.video-modal-open{overflow:hidden}
   .basketball-game-details p{font-size:10px}
   .basketball-tip{font-size:13px}
 }
+
+
+/* Current homepage hero: Shon's basketball action photo. */
+.hero-photo {
+  background-image: url("assets/hero-basketball-defense.jpg") !important;
+  background-size: cover !important;
+  background-position: 50% 46% !important;
+  filter: saturate(.94) contrast(1.04) !important;
+}
+@media (max-width: 700px) {
+  .hero-photo { background-position: 34% 44% !important; }
+}
