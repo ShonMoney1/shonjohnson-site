@@ -763,13 +763,16 @@ body.video-modal-open{overflow:hidden}
 }
 
 
-/* Current homepage hero: Shon's basketball action photo. */
+/* Current homepage hero: center Shon and keep his face visible. */
 .hero-photo {
   background-image: url("assets/hero-basketball-defense.jpg") !important;
-  background-size: cover !important;
-  background-position: 50% 46% !important;
+  background-size: 125% auto !important;
+  background-position: 0% 12% !important;
   filter: saturate(.94) contrast(1.04) !important;
 }
 @media (max-width: 700px) {
-  .hero-photo { background-position: 34% 44% !important; }
+  .hero-photo {
+    background-size: auto 100% !important;
+    background-position: 30% center !important;
+  }
 }
