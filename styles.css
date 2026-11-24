@@ -795,3 +795,9 @@ body.video-modal-open{overflow:hidden}
 .media-card-game2{background:#060807}
 .media-card-game2 img{object-position:54% 44% !important;transform:scale(1.03) !important}
 .media-card-game2:hover img{transform:scale(1.07) !important}
+
+
+/* Basketball Game 3 win versus New Life Camp. */
+.media-card-game3{background:#060807}
+.media-card-game3 img{object-position:37% 35% !important;transform:scale(1.10) !important}
+.media-card-game3:hover img{transform:scale(1.15) !important}
