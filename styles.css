@@ -789,3 +789,9 @@ body.video-modal-open{overflow:hidden}
       linear-gradient(to bottom,rgba(0,0,0,.05) 0%,rgba(0,0,0,.12) 25%,rgba(0,0,0,.60) 58%,rgba(2,5,3,.92) 100%) !important;
   }
 }
+
+
+/* Basketball Game 2 home opener highlight. */
+.media-card-game2{background:#060807}
+.media-card-game2 img{object-position:54% 44% !important;transform:scale(1.03) !important}
+.media-card-game2:hover img{transform:scale(1.07) !important}
